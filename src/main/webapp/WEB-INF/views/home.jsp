@@ -16,7 +16,11 @@
 home
 <sec:authentication property="name" />
 <br>
+<sec:authorize access="hasRole('ROLE_ADMIN')">
 
+	<a href="admin">admin page</a>
+
+</sec:authorize>
 
 <sec:authorize access="isAuthenticated()">
 
