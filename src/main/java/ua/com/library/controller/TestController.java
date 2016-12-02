@@ -56,6 +56,7 @@ public class TestController {
 		model.addAttribute("groupsList", groupsService.getAll());
 		model.addAttribute("groups", groupsService.getAll());
 		model.addAttribute("questionsList", questionService.findAll());
+		int i =0;
 		
 		model.addAttribute("testin", new Test());
 		
